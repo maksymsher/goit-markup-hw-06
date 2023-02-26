@@ -398,6 +398,27 @@ p {
 
 /* ------------------------------------------FOOTER */
 
+.button-footer{
+  position: relative;
+
+}
+.button-footer:hover{
+  background-color: var(--pressed-state);
+  cursor: pointer;
+}
+.input-area-footer:focus{
+  border: none;
+  
+
+}
+
+.svg-submmit{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 117px 10px -45px;
+}
+
 .footer-box .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -576,6 +597,34 @@ color: var(--background);
 
 
 /*----- MODAL----- */
+
+
+.svg-modal-items{
+  fill: red;
+ 
+}
+
+.svg-modal-item{
+position: absolute;
+left: 50px;
+}
+.modal-divison{
+  position: relative;
+}
+
+::placeholder{
+  height: 16px;
+width: 60px;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0.04em;
+text-align: left;
+
+
+
+
+}
 
 .backdrop{
   position: fixed;

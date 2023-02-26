@@ -518,6 +518,9 @@
         <div class="footer-inpu-items">
         <input type="text" placeholder="E-mail" class="input-area-footer">
         <button type="submit" class="button-footer">Subscribe</button>
+        <svg class="svg-submmit"  width="24" height="20">
+          <use href="./images/icons.svg#icon-send"></use>
+        </svg>
         </div>
         
 
@@ -534,19 +537,30 @@
         <use href="./images/icons.svg#icon-close-black"></use>
       </svg>
     </button>
-    <p class="modal-title">Leave your contacts and we will call you back</p>
-    <label for="user-text" class="input-text">Name</label>
-    <input type="text" name="user-name" class="modal-input" required>
 
+    <p class="modal-title">Leave your contacts and we will call you back</p>
+
+<div class="modal-divison">
+    <label for="user-text" class="input-text">Name</label>
+    
+    <input type="text" name="user-name" class="modal-input" required>
+  </div>   
+ 
+<div>
     <label for="user-text" class="input-text">Phone</label>
+    <svg class="svg-modal-items"  width="20" height="20">
+      <use href="./images/icons.svg#icon-person"></use>
+    </svg>
     <input type="text" name="user-tel" class="modal-input">
+  </div>
 
     <label for="user-text" class="input-text">Email</label>
     <input type="text" name="user-mail" class="modal-input">
 
+
     <div class="modal-filed">
       <label for="user-text" class="input-text">Comment</label>
-      <textarea name="user-text" id="user-text" class="modal-message"></textarea>
+      <textarea name="user-text" id="user-text" class="modal-message" placeholder="Text input"></textarea>
     </div>
 
     <div class="privacy-input">
