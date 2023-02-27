@@ -598,20 +598,36 @@ color: var(--background);
 
 /*----- MODAL----- */
 
-
+/*  */
 .svg-modal-items{
-  fill: red;
+  fill: #2E2F42;;
  
 }
-
-.svg-modal-item{
-position: absolute;
-left: 50px;
+.svg-modal-email{
+  fill: #2E2F42;;
+  position: absolute;
+  left: 16px;
+  bottom: 8px;
 }
+.svg-modal-items{
+position: absolute;
+left: 16px;
+bottom: 8px;
+top: 8px;
+
+
+}
+/*  */
+
+
+
 .modal-divison{
   position: relative;
+  
 }
-
+.modal-divison:is(:hover, :focus){
+  color: var(--pressed-state);
+}
 ::placeholder{
   height: 16px;
 width: 60px;
@@ -620,11 +636,11 @@ font-weight: 400;
 line-height: 16px;
 letter-spacing: 0.04em;
 text-align: left;
-
-
+color: rgba(117, 117, 117, 0.5);;
 
 
 }
+
 
 .backdrop{
   position: fixed;
@@ -634,9 +650,7 @@ text-align: left;
   background-color: rgba(46, 47, 66, 0.4);
   
 }
-.privacy-input{
-  margin-top: 16px;
-  }
+
 .modal{
   height: 576px;
   width: 408px;
@@ -717,11 +731,13 @@ letter-spacing: 0.04em;
   width: 360px;
 height: 16px;
 font-size: 12px;
-gap: 8px;
+
 display: flex;
 letter-spacing: 0.04em;
 }
-
+.privacy-text{
+  margin-left: 8px;
+}
 
 .privacy-label .svg-check{
   width: 16px;
@@ -748,13 +764,16 @@ span{
   cursor: pointer;
   height: 56px;
 width: 169px;
-left: 635px;
-top: 584px;
 border-radius: 4px;
 padding: 16px 32px 16px 32px;
-margin-bottom: 24px;
 box-shadow: 0px 4px 4px 0px #00000026;
 border: none;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+
+
 }
 
 .modal-button:hover{
@@ -775,6 +794,10 @@ padding: 8px 16px;
 .modal-message:is(:hover, :focus){
   border: 1px solid #4D5AE5;
   
+}
+.privacy-input{
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 /* -----------------------------------portfolio */
 .cover-text{
