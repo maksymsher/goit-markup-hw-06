@@ -619,7 +619,9 @@ top: 8px;
 }
 /*  */
 
-
+.modal-input:focus + .svg-modal-items {
+  fill: var(--primary-brand);
+}
 
 .modal-divison{
   position: relative;
@@ -710,7 +712,7 @@ border-radius: 4px;
 padding-left: 38px;
 font-size: 18px;
 }
-.modal-input:is(:hover, :focus){
+.modal-input:is( :focus){
   border: 1px solid #4D5AE5;
 
 }
@@ -771,6 +773,7 @@ border: none;
 display: block;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 24px;
 
 
 
@@ -791,9 +794,12 @@ background-color: transparent;
 outline: transparent;
 padding: 8px 16px;
 }
-.modal-message:is(:hover, :focus){
-  border: 1px solid #4D5AE5;
-  
+
+.modal-input:focus{
+  border-color: var(--primary-brand);
+}
+.modal-message:focus{
+  border-color: var(--primary-brand);
 }
 .privacy-input{
   margin-top: 8px;
