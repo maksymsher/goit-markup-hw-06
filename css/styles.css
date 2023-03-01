@@ -412,10 +412,13 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
+.svg-position-footer{
+  padding: 8px 24px 8px 16px;
+}
 .svg-submmit{
-  position: absolute;
+  
   display: flex;
+  
   
   
 }
@@ -499,9 +502,12 @@ p {
   letter-spacing: 0.04em;
 }
 .footer-inpu-items{
-  gap: 24px;
+  
   margin-top: 16px;
   
+}
+.footer-form{
+  display: flex;
 }
 
 .input-footer-title{
@@ -514,7 +520,7 @@ letter-spacing: 0.04em;
 
 }
 .input-area-footer{
-  margin-right: 24px;
+  
   background-color: transparent;
   border: 1px solid #FFFFFF4D;
   height: 40px;
@@ -527,21 +533,32 @@ color: var(--background);
 }
 
 .button-footer{
+  font-size: 16px;
+  padding-left: 24px;
+  line-height: 1.5;
+  font-weight: 500;
   letter-spacing: 0.04em;
+  width: 165px;
+  height: 40px;
+  display: flex;
   flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 64px 8px 24px;
-gap: 16px;
-border: none;
-background: #4D5AE5;
-border-radius: 4px;
-color: var(--background);
-cursor: pointer;
-height: 40px; 
-width: 160px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  padding: 0;
+  color: var(--background);
+  background: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: none;
+  bottom: none;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.teste{
+  padding-left: 24px;
+}
 
 .svg-modal{
   position: absolute;
