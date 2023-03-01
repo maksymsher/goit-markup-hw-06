@@ -482,7 +482,7 @@
        </div>
 
        <div class="social-footer">
-        <b>Social media</b>
+        <b class="title-footer-social">Social media</b>
         <ul class="footer-social-icons">
           <li class="svg-footer"><a href="https://" class="footer-social-link">
             <svg class="team-social-svg" width="20" height="20">
@@ -516,11 +516,13 @@
       <div class="input-footer">
         <b class="input-footer-title">Subscribe</b>
         <div class="footer-inpu-items">
-        <input type="text" placeholder="E-mail" class="input-area-footer">
+          <form class="footer-form">
+        <input type="mail" placeholder="E-mail" class="input-area-footer">
         <button type="submit" class="button-footer">Subscribe</button>
         <svg class="svg-submmit"  width="24" height="20">
           <use href="./images/icons.svg#icon-send"></use>
         </svg>
+      </form>
         </div>
         
 
@@ -540,8 +542,9 @@
 
     <p class="modal-title">Leave your contacts and we will call you back</p>
 
-
-    <label for="user-text" class="input-text">Name</label>
+<form class="modal-form">
+  <div class="modal-filed">
+    <label for="user-name" class="input-text">Name</label>
     <div class="modal-divison">
     
     <input type="text" name="user-name" class="modal-input" required>
@@ -549,25 +552,27 @@
       <use href="./images/icons.svg#icon-person"></use>
     </svg>
   </div>   
- 
-
-    <label for="user-text" class="input-text">Phone</label>
+</div>
+<div class="modal-filed">
+    <label for="user-phone" class="input-text">Phone</label>
     <div class="modal-divison">
     
-    <input type="text" name="user-tel" class="modal-input">
+    <input type="text" name="user-tel" class="modal-input" required>
     <svg class="svg-modal-items"  width="18" height="24">
       <use href="./images/icons.svg#icon-phone"></use>
     </svg>
   </div>
-
+</div>
+<div class="modal-filed">
     <label for="user-mail" class="input-text">Email</label>
 <div class="modal-divison">
   
-    <input type="text" name="user-mail" class="modal-input">
+    <input type="text" name="user-mail" class="modal-input" required>
     <svg class="svg-modal-items"  width="18" height="24">
       <use href="./images/icons.svg#icon-email"></use>
     </svg>
   </div>
+</div>
 
 
     <div class="modal-filed">
@@ -581,6 +586,7 @@
       <use href="./images/icons.svg#icon-seta"></use>
     </svg></span><span class="privacy-text">I accept the terms and conditions of the <span class="privacy-item"><a href="https://">Privacy Policy</a></span></span></label>
     </div>
+  </form>
 
 
 
